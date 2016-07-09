@@ -10,7 +10,14 @@
     tools:context="com.example.anand.materialdesigneproject.MainActivity">
 
     <TextView
+        android:id="@+id/first_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <TextView
+        android:id="@+id/second_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_test"
         android:text="Hello World!" />
 </RelativeLayout>
