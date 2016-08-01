@@ -1,6 +1,7 @@
 package com.example.anand.materialdesigneproject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +18,8 @@ public class MainActivity extends Activity {
         mCustomSeekBarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent customIntent=new Intent(MainActivity.this,CustomSeekbar.class);
+                startActivity(customIntent);
             }
         });
         mToolBarButton.setOnClickListener(new View.OnClickListener() {

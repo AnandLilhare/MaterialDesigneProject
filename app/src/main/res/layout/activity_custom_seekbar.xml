@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <com.rey.material.widget.Switch
+        style="@style/Material.Widget.Switch"
+        android:id="@+id/switch_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:sw_trackColor="#10c9ad"
+        app:sw_thumbColor="#2734c9"
+        app:sw_trackSize="10dp"
+        android:gravity="center"
+        android:checked="false"/>
+
+    <com.rey.material.widget.Slider
+        style="@style/Material.Widget.Slider"
+        android:id="@+id/custom_slider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:sl_discreteMode="true"
+        android:gravity="center"
+        app:sl_minValue="0"
+        app:sl_maxValue="100"
+        app:sl_alwaysFillThumb="true"
+        app:sl_value="50"/>
+
+
+
+
+
 
 </LinearLayout>
